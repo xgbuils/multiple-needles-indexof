@@ -1,0 +1,33 @@
+{
+  "name": "multi-match-indexof",
+  "version": "1.0.0",
+  "description": "function finds the first occurrence of one of specified values in a string.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgbuils/multi-match-indexof.git"
+  },
+  "keywords": [
+    "multiple",
+    "matchs",
+    "indexof",
+    "string"
+  ],
+  "author": "Xavier Garcia Buils <xgbuils@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgbuils/multi-match-indexof/issues"
+  },
+  "homepage": "https://github.com/xgbuils/multi-match-indexof#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.1.3"
+  }
+}
