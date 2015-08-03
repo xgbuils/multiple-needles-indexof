@@ -1,5 +1,5 @@
 {
-  "name": "multi-match-indexof",
+  "name": "multiple-needles-indexof",
   "version": "1.0.0",
   "description": "function finds the first occurrence of one of specified values in a string.",
   "main": "src/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xgbuils/multi-match-indexof.git"
+    "url": "git+https://github.com/xgbuils/multiple-needles-indexof.git"
   },
   "keywords": [
     "multiple",
@@ -22,9 +22,9 @@
   "author": "Xavier Garcia Buils <xgbuils@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xgbuils/multi-match-indexof/issues"
+    "url": "https://github.com/xgbuils/multiple-needles-indexof/issues"
   },
-  "homepage": "https://github.com/xgbuils/multi-match-indexof#readme",
+  "homepage": "https://github.com/xgbuils/multiple-needles-indexof#readme",
   "devDependencies": {
     "chai": "^3.2.0",
     "gulp": "^3.9.0",
