@@ -39,11 +39,17 @@ describe('multi-match-indexof', function () {
 
     it('if needles contains empty string always matches', function () {
         var str = 'ababccc'
-        var m = ['']
+        var m = ['', 'y']
         var os = 2
         mnIndexOf(str, m, os).should.be.deep.equal({
             index: os,
             match: ''
         })
+    })
+
+    it('if no needle match returns undefined', function () {
+        var str = 'ababccc'
+        var m = ['x', 'y']
+        expect(mnIndexOf(str, m)).to.equal(undefined)
     })
 })
