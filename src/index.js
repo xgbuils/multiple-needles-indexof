@@ -7,10 +7,23 @@ function indexOf (str, needles, offset) {
             var mlen = needles.length
             for (var j = 0; j < mlen; ++j) {
                 var needle = needles[j]
-                if (str.substr(i, needle.length) === needle) {
+                var matches = false
+                var match
+                if (needle instanceof RegExp) {
+                    var source = needle.source
+                    if (/^\[[^\]]+\]$/.test(source)) {
+                        var re = new RegExp('^' + source + '$')
+                        matches = re.test(str[i])
+                        match = str[i]
+                    }
+                } else {
+                    matches = str.substr(i, needle.length) === needle
+                    match = needle
+                }
+                if (matches) {
                     return {
                         index: i,
-                        match: needle
+                        match: match
                     }
                 }
             }

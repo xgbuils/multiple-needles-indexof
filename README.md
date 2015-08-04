@@ -1,6 +1,6 @@
 # multiple-needles-indexof
 
-indexOf with multiple needles
+indexOf function with multiple needles. Needles may be a string or a character set RegExp.
 
 ## Install
 npm install multiple-needles-indexof
@@ -19,4 +19,6 @@ mnIndexOf('abcda', ['x', 'y']) // undefined
 mnIndexOf('caabcda', ['c', 'd', 'x'], 2) // {index: 5, match: 'd'}
 // no needles returns undefined
 mnIndexOf('xaabcda', []) // undefined
+// with charset regexp needle
+mnIndexOf('xaabcda', ['f', /[b-d]/]) // {index: 3, match: 'b'}
 ```

@@ -52,4 +52,13 @@ describe('multi-match-indexof', function () {
         var m = ['x', 'y']
         expect(mnIndexOf(str, m)).to.equal(undefined)
     })
+
+    it('if a needle is charset RegExp checks if exist a character that matches', function () {
+        var str = 'da\t abccc'
+        var m = ['x', /[\s]/]
+        mnIndexOf(str, m).should.be.deep.equal({
+            index: 2,
+            match: '\t'
+        })
+    })
 })
