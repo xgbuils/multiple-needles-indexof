@@ -1,6 +1,6 @@
 {
   "name": "multiple-needles-indexof",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "function finds the first occurrence of one of specified values in a string.",
   "main": "src/index.js",
   "directories": {
